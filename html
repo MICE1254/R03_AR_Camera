@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+
+      <a-marker type="pattern" url="./pattern/Profile.patt">
+        <a-image src="./image/Profile.gif" position="0 0.5 0" rotation="-90 0 0"></a-image>
+      </a-marker>
+
+      <a-marker type="pattern" url="./pattern/Balloon.patt">
+        <a-image src="./image/Balloon.gif" position="0 0.5 0" rotation="-90 0 0"></a-image>
+      </a-marker>
+
+      <a-marker type="pattern" url="./pattern/Work.patt">
+        <a-image src="./image/Work.gif" position="0 0.5 0" rotation="-90 0 0"></a-image>
+      </a-marker>
+
+      <a-marker type="pattern" url="./pattern/Event.patt">
+        <a-image src="./image/Event.gif" position="0 0.5 0" rotation="-90 0 0"></a-image>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+
+    </a-scene>
+  </body>
+</html>
