@@ -2,28 +2,10 @@
 <html>
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
   <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-
-      <a-marker preset="hiro">
-        <a-image src="./image/profile.gif" position="0 0.5 0" rotation="-90 0 0"></a-image>
-      </a-marker>
-
-      <a-marker type="pattern" url="./pattern/balloon.patt">
-        <a-image src="./image/balloon.gif" position="0 0.5 0" rotation="-90 0 0"></a-image>
-      </a-marker>
-
-      <a-marker type="pattern" url="./pattern/work.patt">
-        <a-image src="./image/work.gif" position="0 0.5 0" rotation="-90 0 0"></a-image>
-      </a-marker>
-
-      <a-marker type="pattern" url="./pattern/event.patt">
-        <a-image src="./image/event.gif" position="0 0.5 0" rotation="-90 0 0"></a-image>
-      </a-marker>
-
+      <a-image src="profile.gif" position="0 0.5 0" rotation="-90 0 0"></a-image>
       <a-entity camera></a-entity>
-
     </a-scene>
   </body>
 </html>
