@@ -1,11 +1,27 @@
-<html>
-  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- A-Frame を読み込む -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- AR.js を読み込む -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <!-- gif-shader を読み込む -->
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+    <title>R03_AR_Camera</title>
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <a-scene embedded arjs vr-mode-ui="enabled: false;">
+	    
+      <!-- マーカーの.pattファイルを読み込む -->
+      <a-marker type="pattern" url="./asset/pattern-profile.patt">
+        <!-- gifファイルを呼び出す -->
+        <a-image src="./asset/profile.gif" rotation="-90 0 0" ></a-image>
+      </a-marker>
 
-  <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-      <a-image src="./profile.gif" position="0 0 0.5" rotation="-90 0 0" width="3" height="3"></a-image>
+      <!-- カメラを追加 -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
